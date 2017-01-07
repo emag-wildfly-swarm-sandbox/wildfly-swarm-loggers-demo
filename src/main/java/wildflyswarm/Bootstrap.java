@@ -14,7 +14,6 @@ public class Bootstrap {
     Swarm swarm = new Swarm();
 
     swarm.fraction(LoggingFraction.createDefaultLoggingFraction()
-      .defaultFormatter()
       .fileHandler(FILE_HANDLER_KEY, FILE_PATH, Level.ALL, FILE_FORMATTER)
       .rootLogger(Level.INFO, LoggingFraction.CONSOLE, FILE_HANDLER_KEY)
       .logger("one", l -> l
