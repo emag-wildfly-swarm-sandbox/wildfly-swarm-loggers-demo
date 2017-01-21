@@ -1,0 +1,8 @@
+swarm:
+  logging:
+    file-handlers:
+      FILE:
+        file:
+          path: production-server.log
+          relative-to: jboss.server.log.dir
+        formatter: "%d{yyyy-MM-dd HH:mm:ss,SSS} %-5p [%c] (%t) %s%e%n"
